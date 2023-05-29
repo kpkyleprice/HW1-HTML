@@ -1,0 +1,89 @@
+body {
+    background-image: url("gym1.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    margin: 0;
+}
+.navigation > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+.navigation > a:hover{
+    text-decoration: wavy;
+    color: red;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.banner >h1 {
+    padding-bottom: 10px;
+    color: whitesmoke;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.sign-container {
+    display: flex;
+    justify-content: left;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    height: 450px;
+    padding-left: 100px;
+}
+.row {
+    justify-content: center;
+}
+.email {
+    padding-top: 50px;
+}
+.password {
+    padding-top: 50px;
+}
+.button {
+    padding-top: 20px;
+}
+.remember {
+    padding-top: 10px;
+}
+.sign-up {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+.nam {
+    padding-top: 35px;
+}
+.sub {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.button-su {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+#butt {
+    width: 150px;
+    background-color: black;
+    border: .8px solid black;
+    border-radius: 25px;
+    height: 40px;
+    color: white;
+}
+.logo {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+}

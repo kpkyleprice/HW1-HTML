@@ -1,0 +1,86 @@
+body {
+    background-image: url("sulogo.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    margin: 0;
+}
+.navigation > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+.navigation > a:hover{
+    text-decoration: none;
+    color: red;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.banner >h1 {
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.sign-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    height: 600px;
+}
+.row {
+    justify-content: center;
+}
+.forms {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    padding-left: 40px;
+}
+
+.state {
+    padding-right: 20px;
+    padding-top: 4px;
+}
+.forms2 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+#quantity {
+    width: 150px;
+}
+#sub {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.fb {
+    color: rgb(255, 255, 255);
+}
+.container2{
+    position: absolute; 
+    bottom: 0;
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

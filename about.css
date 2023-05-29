@@ -1,0 +1,201 @@
+body {
+    background-color: whitesmoke;
+	margin: 0;
+}
+.container {
+    width: 100%;
+    height:175px;
+    margin-left: 0;
+	margin: 0;
+  }
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    margin: 0;
+}
+.navigation > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+.navigation > a:hover{
+    text-decoration: wavy;
+    color: red;
+}
+.title {
+    display: flex;
+    padding-bottom: 10px;
+}
+.row2 {
+	padding-top: 20px;
+}
+.container-card {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
+.container-card >h2{
+	display: flex;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 40px;
+}
+.container-card >p {
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding-top: 20px;
+}
+.row2{
+	display: flex;
+	justify-content: center;
+}
+.reveal-text,
+.reveal-text::after {
+	animation-delay: var(--animation-delay, 8s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 5000ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.1, 0.2, 0.4, 1);
+}
+.mot {
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	align-items: center;
+	font-size: 50px;
+}
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	
+}
+.info {
+	width: 260px;
+}
+#josh {
+	height: 200px;
+	width: 250px;
+}
+#jenny {
+	height: 200px;
+	width: 250px;
+}
+#laura {
+	height: 200px;
+	width: 250px;
+}
+#tyler {
+	height: 200px;
+	width: 250px;
+}
+.row3 {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+	padding-left: 40px;
+}
+#fb {
+	font-size: x-large;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	margin-right: 5px;
+}
+#fb:hover {
+	transform: scale(1.2);
+}
+#twit {
+	font-size: x-large;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	margin: 5px;
+}
+#twit:hover {
+	transform: scale(1.2);
+}
+#insta {
+	font-size: x-large;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	margin: 5px;
+}
+#insta:hover {
+	transform: scale(1.2);
+}
+.names {
+	font-weight: bold;
+	font-size: 30px
+}
+.reveal-text {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 1000ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	font-size: 10vw;
+	animation-name: clip-text;
+	color: rgb(0, 0, 0);
+	white-space: nowrap;
+	cursor: default;
+    text-decoration: wavy;
+    text-decoration: ;
+
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #f2f98b;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
+#before {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#after {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
